@@ -1,0 +1,27 @@
+name: "say hello on each push"
+on:
+    push:
+jobs:
+  first_job :
+    name: "first_job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "first_job"
+        run: |
+          echo "Ceci est un premier job"
+
+  second_job :
+      name: "second_job"
+      runs-on: ubuntu-latest
+      steps:
+        - name: "second_job"
+          run: |
+            echo "Ceci est un second job"
+
+  third_job :
+    name: "third_job"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "third_job"
+        run: |
+          echo "ceci est un troisième job"
