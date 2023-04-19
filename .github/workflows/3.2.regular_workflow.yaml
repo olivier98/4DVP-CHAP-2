@@ -1,0 +1,11 @@
+name: say-hello-workflow
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+    - cron: "0 0 1 * *"
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say_hello_step
+        run: echo "Hello, world!"
