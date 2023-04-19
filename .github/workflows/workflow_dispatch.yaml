@@ -13,11 +13,11 @@ on:
       class:
         description: 'Class'
         required: true
-        default: 'sith'
+        default: 'Niveau 3'
         options:
-          - 'jedi'
-          - 'sith'
-          - 'rebel'
+          - 'Niveau 1'
+          - 'Niveau 2'
+          - 'Niveau 3'
 jobs:
   workflow_dispatch:
     runs-on: ubuntu-latest
