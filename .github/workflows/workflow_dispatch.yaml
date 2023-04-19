@@ -1,4 +1,4 @@
-name: Custom Workflow
+name: workflow_dispatch
 on:
   workflow_dispatch:
     inputs:
@@ -13,15 +13,15 @@ on:
       class:
         description: 'Class'
         required: true
-        default: 'A'
+        default: 'sith'
         options:
           - 'jedi'
           - 'sith'
           - 'rebel'
 jobs:
-  custom_job:
+  workflow_dispatch:
     runs-on: ubuntu-latest
     steps:
       - name: player_infos
         run: |
-          echo "Le joueur ${{ github.event.inputs.username }} est de niveau + ${{ github.event.inputs.level }} +  et joue un + ${{ github.event.inputs.class }}"
+          echo "Le joueur + ${{ github.event.inputs.username }} + est de niveau + ${{ github.event.inputs.level }} +  et joue un + ${{ github.event.inputs.class }}"
