@@ -13,11 +13,11 @@ on:
       class:
         description: 'Class'
         required: true
-        default: 'Niveau 3'
+        default: 'Niveau2'
         options:
-          - 'Niveau 1'
-          - 'Niveau 2'
-          - 'Niveau 3'
+          - 'Niveau1'
+          - 'Niveau2'
+          - 'Niveau3'
 jobs:
   workflow_dispatch:
     runs-on: ubuntu-latest
