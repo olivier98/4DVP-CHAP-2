@@ -24,4 +24,4 @@ jobs:
     steps:
       - name: player_infos
         run: |
-          echo "Le joueur + ${{ github.event.inputs.username }} + est de niveau + ${{ github.event.inputs.level }} +  et joue un + ${{ github.event.inputs.class }}"
+          echo "Le joueur + ${{ github.event.inputs.username }} + est de niveau + ${{ github.event.inputs.level }} + et joue un + ${{ github.event.inputs.class }}"
