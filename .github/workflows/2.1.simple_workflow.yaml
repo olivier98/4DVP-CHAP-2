@@ -1,7 +1,8 @@
 name: "say hello on each push"
 on:
     push:
-    branch : demo
+      branches: 
+      - demo
 jobs:
   say_hello :
     name: "say_hello"
